@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title></title>
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <link href="css/slyshow.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+    <div id="container">
+
+		<h1>SlyShow</h1>
+		<h2>Coin-image animation and resposive lightbox<small>...still in beta...</small></h2>
+
+		<section id='demo'>
+			<div class='ground ground_0'></div>
+			<div class='ground ground_1'></div>
+			<div class='ground ground_2'></div>
+		</section>
+		<section id='why'>
+			<h2>Why this script?</h2>	
+			<p>This script started like a game in a boring moment. At the end, it comes something useful. So i decided to make it better and share it.<br /> I know, that isn't Fancybox.</p>
+		</section>
+		<section id='suggests'>
+			<h2>How to start...</h2>
+			<p>All begin with...</p>
+			<pre>&lt;div class='ground ground_0'&gt;&lt;/div><br/>&lt;div class='ground ground_1'&gt;&lt;/div><br/>...<br/>&lt;div class='ground ground_N'&gt;&lt;/div></pre>
+			<p>...and remember to add:</p>
+			<pre>&lt;link href="css/slyshow.css" rel="stylesheet" type="text/css"&gt;<br />...<br />&lt;script type="text/javascript" src="http://code.jquery.com/jquery-2.0.2.min.js" &gt;<br />&lt;/script&gt;&lt;script type="text/javascript" src="js/slyshow.js" &gt;&lt;/script&gt;</pre>
+
+			<p>Insert on your HTML all div tag that you want, but remember, class can have any name you want, but must have this sintax:</p>
+			<pre>class='nameClass nameClass_1'</pre>
+
+			<p>You can personalize every single coin width your preferred background...<p>
+<pre>.nameClass_0{
+	background-image: url('../img/8775428047_653ee3989e_o.jpg');
+	background-position: 0 0;
+	background-repeat: no-repeat;
+}</pre>
+
+			<p>...and personalized the dimension of the coins(remember width and height must be same, otherwise you'll have eggs!)<p>
+<pre>.nameClass{
+	width: 320px;
+	height: 320px;
+}</pre>
+
+			<p>In the end add, in header or in your custom javascript file these strings</p>
+<pre>$(document).ready(function(){
+	$(".ground").click(function(){
+		$(this).slyshow();
+	});
+});</pre>
+
+			<p>Can personalize the slyshow options, these are the defaults:</p>
+<pre>$(this).slyshow({
+    speed		: 300,			//transition speed in milliseconds
+    colorShadow		: "",			//color of the image's shadow
+    leftText		: "&larr;",			//name for the left button
+    rightText		: "&rarr;",			//name for the right button
+    closeText		: "X",			//name for the close button
+    actual_el		: 0,			//current element(automatically updated by the script)
+    keyboardControl	: true,			//is keyboard controlled?
+    mouseControl	: true,			//is mouse controlled?
+    responsive		: true			//is responsive?	  	
+});</pre>
+
+
+		</section>
+		<section id='bug'>
+			<h2>Known bugs and problems</h2>
+			<p>
+				<ul>
+					<li>The actual element option leads to 0 everytime window is resized.</li>
+					<li>After window's resize, key next/prev make crazy things!</li>	
+					<li>For now, doesn't support link on image, and not even html codes.</li>				
+				</ul>
+			</p>
+		</section>
+		<footer>Developed in a boring and rainy afternoon by <a href='#'>me</a>.</footer>
+
+	</div><!-- END .container -->
+	<script type="text/javascript" src="http://code.jquery.com/jquery-2.0.2.min.js" ></script>
+	<script type="text/javascript" src="js/slyshow.js" ></script>
+	<script type="text/javascript" src="js/main.js" ></script>
+
+</body>
+</html>
