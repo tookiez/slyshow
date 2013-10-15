@@ -5,16 +5,17 @@ Coin-image animation and resposive lightbox
 
 All begin with...
 
-<div class='ground ground_0'></div>
-<div class='ground ground_1'></div>
+&lte;div class='ground ground_0'&gte;&lte;/div&gte;
+&lte;div class='ground ground_1'&gte;&lte;/div&gte;
 ...
-<div class='ground ground_N'></div>
-...and remember to add:
+&lte;div class='ground ground_N'&gte;&lte;/div&gte;
 
-<link href="css/slyshow.css" rel="stylesheet" type="text/css">
+...and remember to add:
+&lte;link href="css/slyshow.css" rel="stylesheet" type="text/css"&gte;
 ...
-<script type="text/javascript" src="http://code.jquery.com/jquery-2.0.2.min.js" >
-</script><script type="text/javascript" src="js/slyshow.js" ></script>
+&lte;script type="text/javascript" src="http://code.jquery.com/jquery-2.0.2.min.js" &gte;
+&lte;/script&gte;&lte;script type="text/javascript" src="js/slyshow.js" &gte;&lte;/script&gte;
+
 Insert on your HTML all div tag that you want, but remember, class can have any name you want, but must have this sintax:
 
 class='nameClass nameClass_1'
