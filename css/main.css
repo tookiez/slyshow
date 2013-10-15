@@ -1,0 +1,30 @@
+@import url(http://fonts.googleapis.com/css?family=Kite+One|Merriweather+Sans);
+
+body{
+	background: rgba(26, 188, 156,0.2);
+	font-family: "Merriweather Sans";
+}
+h1,h2,h3,h4,h5,h6{
+	color: rgb(26, 188, 156);
+	font-family: "Kite One";
+}
+h2{margin:0;}
+small{color: #e74c3c;}
+#container{
+	width: 960px;
+	margin: 0 auto;
+}
+#demo{height: 360px;}
+#container section{
+	padding: 30px 0;
+	border-bottom: 3px solid rgba(26, 188, 156, 1);
+}
+pre{
+	background: rgb(255, 255, 255);
+	border: thin solid rgba(26, 188, 156, 1);
+	width: 95%;
+	border-radius: 10px;
+	margin: 0 auto;
+	padding: 2.5%;
+	text-align: left;
+}
